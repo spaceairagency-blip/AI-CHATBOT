@@ -79,10 +79,10 @@ const PAGE = String.raw`<!DOCTYPE html>
     gap: 20px;
     padding: 20px;
   }
-  .rail { min-width: 0; min-height: 0; overflow: auto; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-  .rail-tag { font-size: .75rem; color: var(--muted); }
+  .rail { min-width: 0; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; align-items: stretch; gap: 10px; }
+  .rail-tag { font-size: .75rem; color: var(--muted); text-align: center; }
   .rail-inner {
-    width: 100%; max-width: 300px; min-height: 250px;
+    flex: 1 1 250px; width: 100%; min-height: 250px;
     border: 1px dashed var(--line); border-radius: 14px;
     display: flex; align-items: flex-start; justify-content: center;
     overflow: hidden;
@@ -182,8 +182,9 @@ const PAGE = String.raw`<!DOCTYPE html>
   /* ---------- small screens: ads become strips above and below ---------- */
   @media (max-width: 980px) {
     .layout { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto; padding: 10px; gap: 10px; }
-    .rail { max-height: 110px; }
-    .rail-inner { max-width: 100%; min-height: 60px; }
+    .rail { max-height: 110px; gap: 4px; }
+    .rail-inner { min-height: 60px; }
+    .rail-inner.extra { display: none; }
     .chat { border-radius: 18px; }
   }
   @media (max-width: 560px) {
@@ -199,10 +200,38 @@ const PAGE = String.raw`<!DOCTYPE html>
 <body>
 <div class="layout">
 
-  <!-- LEFT SIDE ADVERTISEMENT -->
+  <!-- LEFT SIDE ADVERTISEMENT (3 slots) -->
   <aside class="rail" aria-label="Advertisement">
     <span class="rail-tag">Advertisement</span>
     <div class="rail-inner">
+      <script>
+      (function(eruj){
+      var d = document,
+          s = d.createElement('script'),
+          l = d.currentScript || d.scripts[d.scripts.length - 1];
+      s.settings = eruj || {};
+      s.src = "\/\/quarrelsomebitter.com\/bHXKV.sTdvGMlc0\/YKWkcF\/OeGmy9wuuZNUcl\/kwPkTice1\/M_zKgozIM\/jaE-tvNnzzU\/zVOJDeM\/yqN\/Qj";
+      s.async = true;
+      s.referrerPolicy = 'no-referrer-when-downgrade';
+      l.parentNode.insertBefore(s, l);
+      })({})
+      </script>
+    </div>
+    <div class="rail-inner extra">
+      <script>
+      (function(eruj){
+      var d = document,
+          s = d.createElement('script'),
+          l = d.currentScript || d.scripts[d.scripts.length - 1];
+      s.settings = eruj || {};
+      s.src = "\/\/quarrelsomebitter.com\/bHXKV.sTdvGMlc0\/YKWkcF\/OeGmy9wuuZNUcl\/kwPkTice1\/M_zKgozIM\/jaE-tvNnzzU\/zVOJDeM\/yqN\/Qj";
+      s.async = true;
+      s.referrerPolicy = 'no-referrer-when-downgrade';
+      l.parentNode.insertBefore(s, l);
+      })({})
+      </script>
+    </div>
+    <div class="rail-inner extra">
       <script>
       (function(eruj){
       var d = document,
@@ -255,10 +284,38 @@ const PAGE = String.raw`<!DOCTYPE html>
     </div>
   </main>
 
-  <!-- RIGHT SIDE ADVERTISEMENT -->
+  <!-- RIGHT SIDE ADVERTISEMENT (3 slots) -->
   <aside class="rail" aria-label="Advertisement">
     <span class="rail-tag">Advertisement</span>
     <div class="rail-inner">
+      <script>
+      (function(eruj){
+      var d = document,
+          s = d.createElement('script'),
+          l = d.currentScript || d.scripts[d.scripts.length - 1];
+      s.settings = eruj || {};
+      s.src = "\/\/quarrelsomebitter.com\/bHXKV.sTdvGMlc0\/YKWkcF\/OeGmy9wuuZNUcl\/kwPkTice1\/M_zKgozIM\/jaE-tvNnzzU\/zVOJDeM\/yqN\/Qj";
+      s.async = true;
+      s.referrerPolicy = 'no-referrer-when-downgrade';
+      l.parentNode.insertBefore(s, l);
+      })({})
+      </script>
+    </div>
+    <div class="rail-inner extra">
+      <script>
+      (function(eruj){
+      var d = document,
+          s = d.createElement('script'),
+          l = d.currentScript || d.scripts[d.scripts.length - 1];
+      s.settings = eruj || {};
+      s.src = "\/\/quarrelsomebitter.com\/bHXKV.sTdvGMlc0\/YKWkcF\/OeGmy9wuuZNUcl\/kwPkTice1\/M_zKgozIM\/jaE-tvNnzzU\/zVOJDeM\/yqN\/Qj";
+      s.async = true;
+      s.referrerPolicy = 'no-referrer-when-downgrade';
+      l.parentNode.insertBefore(s, l);
+      })({})
+      </script>
+    </div>
+    <div class="rail-inner extra">
       <script>
       (function(eruj){
       var d = document,
